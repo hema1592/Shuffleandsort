@@ -1,0 +1,101 @@
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    background: #efefef;
+}
+.btn {
+    display: block;
+    width: 240px;
+    position: relative;
+    top: 0px;
+    background: #f7f7f7;
+    padding: 15px 50px;
+    margin: 25px 22px 0 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    color: #222;
+    text-shadow: 1px 1px 1px #fff;
+    padding: 0.8em 2em;
+}
+.btn:active {
+    position: relative;
+    top: 5px;
+}
+.btn.blue {
+    background: #72c3dc;
+    color: #fff;
+    border: 1px solid #2b8ead;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+}
+.shuffleWrapper {
+    overflow: hidden;
+    min-height: 170px;
+}
+.rightPanel {
+    float: right;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+    padding: 0.4em 0.9em;
+    margin: 0px -3px;
+    font-size: 6em;
+    display: inline-block;
+    color: #fff;
+    font-weight: 100;
+}
+li:nth-child(2),li:nth-child(4){
+    background: #2b8ead;
+}
+li:nth-child(3),li:nth-child(5),li:nth-child(9) {
+    background: #2f454e;
+}
+li:nth-child(1),li:nth-child(8) {
+    background: #6f98a8;
+}
+li:nth-child(6),li:nth-child(7) {
+    background: #bfbfbf;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 1000px) {
+    .wrapper {
+        background: none;
+        width: 100%;
+    }
+    .rightPanel {
+        float: none;
+        margin: 1em;
+        width: auto;
+        border: 0;
+        text-align: center;
+    } 
+    .btn {
+        overflow: visible;
+        padding: 15px 25px;
+        display: inline-block;
+        margin: 10px;
+        width: 135px;
+    }
+    ul li {
+        list-style: none;
+        padding: 0.3em;
+        display: block;
+        margin: 0;
+        color: #333;
+        font-size: 3em;
+        text-align: center;
+    }
+    li {
+        background: #efefef;
+        margin-bottom: 10px;
+        border-bottom: 2px solid white;
+    }
+   
+}
